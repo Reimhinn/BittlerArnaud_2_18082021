@@ -1,0 +1,30 @@
+/*header*/
+
+header {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#logo {
+width: 96px;
+margin: 53px;
+}
+
+#menu {
+display: flex;
+justify-content: flex-end;
+width: 100%;
+}
+
+#menu li {
+display: inline;
+list-style-type: none;
+margin-right: 67px;
+}
+
+#sign-in-nav, #rooms-nav {
+  color: #0065FC
+}
