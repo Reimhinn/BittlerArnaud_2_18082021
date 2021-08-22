@@ -1,30 +1,84 @@
-/*header*/
-
 header {
   max-width: 1440px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin: 0 auto;
 }
 
 #logo {
-width: 96px;
-margin: 53px;
+  width: 96px;
+  height: 29px;
+  margin: 0 53px;
+  cursor: pointer
 }
 
 #menu {
-display: flex;
-justify-content: flex-end;
-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  cursor: pointer
 }
 
 #menu li {
-display: inline;
-list-style-type: none;
-margin-right: 67px;
+  display: inline;
+  list-style-type: none;
+  margin-right: 67px;
 }
 
-#sign-in-nav, #rooms-nav {
-  color: #0065FC
+#sign-in-nav {
+  color: #0065FC;
+  font-weight: 550;
+}
+
+#rooms-nav {
+  color: #0065FC;
+  font-weight: 500;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#page-presentation {
+  margin-left: 53px;
+}
+
+#filter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 53px;
+}
+
+#search-bar {
+  margin-left: 53px;
+  display: inline-flex;
+}
+
+
+#search-text {
+  padding: 10px;
+}
+
+#search-infos {
+  margin-left: 53px;
+}
+
+.filter-option {
+  list-style-type: none;
+  display: inline;
+  margin: 24px;
+  border: solid 2px;
+  border-radius: 30px;
+  padding: 17px;
+  border-color: #d9d9d9;
+  cursor: pointer;
+}
+
+#search-button {
+  background-color:#0065FC;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  cursor: pointer
 }

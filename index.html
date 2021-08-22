@@ -3,6 +3,7 @@
   <meta charset="utf-8">
   <title>Reservia - Projet Openclassrooms</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 
 <body>
@@ -26,24 +27,27 @@
 <!--SEARCH-->
     <search>
       <div id="page-presentation">
-        <h2>Trouvez votre hébergment pour des vacances de rêve</h2>
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre de ville ou en pleine nature</p>
       </div>
-      <form>
-        <input type="text">
-        <button>Rechercher</button>
+      <form id="search-bar">
+        <div id="search-bar-icon">
+          <i class="fas fa-map-marker-alt search-bar-icon"></i>
+        </div>
+        <input id="search-text" type="search" placeholder="Marseille, France">
+        <button id="search-button"><span id="search-button-text">Rechercher</span></button>
       </form>
       <div id="filter">
         <h2>Filtres</h2>
         <ul>
-          <li>Économique</li>
-          <li>Familial</li>
-          <li>Romantique</li>
-          <li>Animaux autorisés</li>
+          <li class="filter-option">Économique</li>
+          <li class="filter-option">Familial</li>
+          <li class="filter-option">Romantique</li>
+          <li class="filter-option">Animaux autorisés</li>
         </ul>
       </div>
       <div id="search-infos">
-        <p>Plus de 500 logements sont dispoSnibles dans cette ville</p>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </search>
   </main>
