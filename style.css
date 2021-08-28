@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "raleway";
+  src: url("fonts/Raleway-Regular.ttf") format("truetype")
+ }
+
+body {
+  font-family: "raleway";
+ }
+
 header {
   max-width: 1440px;
   display: flex;
@@ -6,8 +15,7 @@ header {
 }
 
 #logo {
-  width: 96px;
-  height: 29px;
+  height: 45px;
   margin: 0 53px;
   cursor: pointer
 }
@@ -35,6 +43,13 @@ header {
   font-weight: 500;
 }
 
+.nav-option:hover {
+  cursor: pointer;
+  border-top: 3px solid;
+  border-color: #0065FC;
+  padding-top: 21px;
+}
+
 main {
   max-width: 1440px;
   margin: 0 auto;
@@ -55,9 +70,34 @@ main {
   display: inline-flex;
 }
 
+.search-bar-icon {
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+}
 
 #search-text {
   padding: 10px;
+  width: 200px;
+  border-left: none;
+  border-right: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+}
+
+#search-button {
+  background-color:#0065FC;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  padding: 10px;
+  border: none;
+  cursor: pointer
+}
+
+#search-button-text, #search-text {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #search-infos {
@@ -65,20 +105,79 @@ main {
 }
 
 .filter-option {
-  list-style-type: none;
-  display: inline;
   margin: 24px;
   border: solid 2px;
   border-radius: 30px;
-  padding: 17px;
   border-color: #d9d9d9;
   cursor: pointer;
+  font-size: 16px;
+  height: 50px;
 }
 
-#search-button {
-  background-color:#0065FC;
-  color: white;
-  border-radius: 0 10px 10px 0;
-  border: none;
-  cursor: pointer
+.filter-option:hover {
+  background: #f6faff;
+}
+
+.filter-i {
+  padding: 17px;
+  width: 20px;
+  background: #DEEBFF;
+  border-radius: 100%;
+  text-align: center;
+  color: #0065FC;
+  margin: -2px;
+  font-size: 20px;
+}
+
+.filter-category {
+  padding: 15px;
+  font-weight: bold;
+}
+
+
+#filter h2 {
+  line-height: 60px;
+}
+
+#search-infos {
+  display: inline-flex;
+}
+
+.icon-infos {
+  color: #0065FC;
+  height: 25px;
+  width: 25px;
+  font-size: 14px;
+  border: solid 1px;
+  margin: 15px 10px 0 0;
+  border-radius: 100%;
+  border-color: #d9d9d9;
+  text-align: center;
+}
+
+#hosting {
+  margin-left: 53px;
+  background-color: #F2F2F2;
+  max-width: 64%;
+  height: 625px;
+  border-radius: 2rem;
+}
+
+#hosting h2 {
+  margin-left: 50px;
+  padding-top: 45px;
+  padding-bottom: 23px;
+}
+
+#hosting-rooms {
+  margin-left: 53px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hosting-rooms-model {
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 200px;
+  width: 30%;
 }
