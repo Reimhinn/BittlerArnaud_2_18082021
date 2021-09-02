@@ -22,15 +22,21 @@ header {
 
 #menu {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   width: 100%;
   cursor: pointer
 }
 
+#menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
 #menu li {
-  display: inline;
+  display: block;
   list-style-type: none;
-  margin-right: 67px;
+  padding: 2rem;
 }
 
 #sign-in-nav {
@@ -47,7 +53,6 @@ header {
   cursor: pointer;
   border-top: 3px solid;
   border-color: #0065FC;
-  padding-top: 21px;
 }
 
 main {
@@ -137,7 +142,6 @@ main {
   /* display: block; */
 }
 
-
 #filter h2 {
   line-height: 60px;
 }
@@ -188,9 +192,23 @@ main {
   background-color: white;
   border-radius: 1.5rem;
   height: 200px;
-  width: calc(92%/3);
+  /* width: calc(92%/3); */
   margin: 2%;
   box-shadow: 0 0 20px 0 #00000044;
+  padding: 6px 1px 0 1px;
+  width: 246px;
+}
+
+.hosting-rooms-model h3 {
+  margin: 0.5rem 3rem 0 1.25rem;
+}
+
+.hosting-rooms-model p {
+  margin: 0 3rem 0 1.25rem;
+}
+
+.hosting-stars {
+  margin: 0.1rem 3rem 1.5rem 1.25rem;
 }
 
 .hosting-rooms-model:nth-child(3n + 1) {
@@ -213,10 +231,6 @@ main {
   display: block;
 }
 
-.hosting-rooms-figure{
-  padding: 6px 1px 0 1px;
-  margin: 0;
-}
 
 .blue-star {
 color: #0065fc;
