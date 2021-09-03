@@ -33,10 +33,17 @@ header {
   flex-direction: row;
 }
 
-#menu li {
+.nav-option {
   display: block;
   list-style-type: none;
   padding: 2rem;
+  margin-top: -24px;
+}
+
+.nav-option:hover {
+  cursor: pointer;
+  border-top: 3px solid;
+  border-color: #0065FC;
 }
 
 #sign-in-nav {
@@ -49,11 +56,6 @@ header {
   font-weight: 500;
 }
 
-.nav-option:hover {
-  cursor: pointer;
-  border-top: 3px solid;
-  border-color: #0065FC;
-}
 
 main {
   max-width: 1440px;
@@ -110,6 +112,8 @@ main {
 }
 
 .filter-option {
+  display: flex;
+  align-items: center;
   margin: 24px;
   border: solid 2px;
   border-radius: 30px;
@@ -118,6 +122,7 @@ main {
   font-size: 16px;
   /* height: 50px; */
   vertical-align: top;
+  justify-content: center;
 }
 
 .filter-option:hover {
@@ -127,16 +132,18 @@ main {
 .filter-i {
   padding: 17px;
   width: 20px;
+  height: 20px;
   background: #DEEBFF;
   border-radius: 100%;
   text-align: center;
   color: #0065FC;
   margin: -2px;
   font-size: 20px;
+  vertical-align: middle;
 }
 
 .filter-category {
-  padding: 13px;
+  margin: 13px;
   font-weight: bold;
   /* margin-top: -20px; */
   /* display: block; */
@@ -200,7 +207,8 @@ main {
 }
 
 .hosting-rooms-model h3 {
-  margin: 0.5rem 3rem 0 1.25rem;
+  margin: 0.5rem 1.5rem 0 1.25rem;
+  font-weight: bold;
 }
 
 .hosting-rooms-model p {
@@ -229,6 +237,11 @@ main {
   width: 95%;
   margin: auto;
   display: block;
+}
+
+.hosting-rooms-model:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 
