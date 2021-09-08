@@ -38,6 +38,8 @@ header {
   list-style-type: none;
   padding: 2rem;
   margin-top: -24px;
+  border-top: 3px solid;
+  border-color: white;
 }
 
 .nav-option:hover {
@@ -48,7 +50,7 @@ header {
 
 #sign-in-nav {
   color: #0065FC;
-  font-weight: 550;
+  font-weight: 800;
 }
 
 #rooms-nav {
@@ -130,16 +132,21 @@ main {
 }
 
 .filter-i {
-  padding: 17px;
-  width: 20px;
-  height: 20px;
-  background: #DEEBFF;
-  border-radius: 100%;
-  text-align: center;
+  /* line-height: 50px; */
   color: #0065FC;
-  margin: -2px;
   font-size: 20px;
-  vertical-align: middle;
+}
+
+.icon-border {
+  border-radius: 100%;
+  background: #DEEBFF;
+  margin: -2px;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-category {
@@ -172,6 +179,12 @@ main {
   box-sizing: border-box;
 }
 
+.rooms{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #hosting {
   margin-left: 53px;
   background-color: #F2F2F2;
@@ -180,6 +193,7 @@ main {
   border-radius: 2rem;
   padding: 0 50px;
   box-sizing: border-box;
+  margin-right: 40px;
 }
 
 #hosting h2 {
@@ -199,11 +213,11 @@ main {
   background-color: white;
   border-radius: 1.5rem;
   height: 200px;
-  /* width: calc(92%/3); */
+  width: calc(92%/3);
   margin: 2%;
   box-shadow: 0 0 20px 0 #00000044;
   padding: 6px 1px 0 1px;
-  width: 246px;
+  box-sizing: border-box;
 }
 
 .hosting-rooms-model h3 {
@@ -217,6 +231,7 @@ main {
 
 .hosting-stars {
   margin: 0.1rem 3rem 1.5rem 1.25rem;
+  font-size: 11px;
 }
 
 .hosting-rooms-model:nth-child(3n + 1) {
@@ -230,8 +245,6 @@ main {
 }
 
 .hosting-img-model{
-  width: 100%;
-  max-width: 100%;
   height: 114px;
   border-radius: 1rem 1rem 0 0;
   width: 95%;
@@ -251,4 +264,46 @@ color: #0065fc;
 
 .grey-star {
   color: #d9d9d9;
+}
+
+.popular {
+  background-color: #F2F2F2;
+  width: 30%;
+  border-radius: 2rem;
+  padding: 0 50px;
+}
+
+.popular h2{
+  padding-top: 45px;
+  padding-bottom: 23px;
+}
+
+.popular .hosting-rooms-model {
+  width: 343px;
+  height: 144px;
+  margin-left: 0;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 34px;
+}
+
+.popular-img-model{
+  border-radius: 1.25rem 0 0 1.25rem;
+  width: 35%;
+  height: 134px;
+}
+
+.popular-rooms {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-rooms-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-stars {
+  font-size: 11px;
+  margin: 1.5rem 3rem 1.5rem 1.25rem;
 }
