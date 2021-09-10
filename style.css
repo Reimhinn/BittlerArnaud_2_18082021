@@ -307,3 +307,17 @@ color: #0065fc;
   font-size: 11px;
   margin: 1.5rem 3rem 1.5rem 1.25rem;
 }
+
+.activities-places{
+  display: flex;
+}
+
+.activities-place-model{
+  width: 25%;
+}
+
+.activities-place-model img{
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px;
+}
