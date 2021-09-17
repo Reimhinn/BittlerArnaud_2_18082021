@@ -216,7 +216,7 @@ main {
   width: calc(92%/3);
   margin: 2%;
   box-shadow: 0 0 20px 0 #00000044;
-  padding: 6px 1px 0 1px;
+  padding: 6px;
   box-sizing: border-box;
 }
 
@@ -245,10 +245,10 @@ main {
 }
 
 .hosting-img-model{
-  height: 114px;
+  width: 100%;
+  height: 59%;
+  object-fit: cover;
   border-radius: 1rem 1rem 0 0;
-  width: 95%;
-  margin: auto;
   display: block;
 }
 
@@ -283,14 +283,16 @@ color: #0065fc;
   height: 144px;
   margin-left: 0;
   display: flex;
-  padding: 5px;
+  padding: 6px;
   margin-bottom: 34px;
 }
 
 .popular-img-model{
   border-radius: 1.25rem 0 0 1.25rem;
   width: 35%;
-  height: 134px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .popular-rooms {
@@ -312,12 +314,39 @@ color: #0065fc;
   display: flex;
 }
 
-.activities-place-model{
-  width: 25%;
+.activities-places .activities-place-model{
+  /* width: 25%; */
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px 0 #00000044;
 }
 
 .activities-place-model img{
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   margin: 20px;
+  border-radius: 1.25rem;
+  display: block;
+  object-fit: cover;
+}
+
+.activities-double-places {
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-double-places .activities-place-model {
+  width: 100%;
+}
+
+.activities-double-places .activities-place-model:first-child {
+  height: 65%;
+}
+
+.activities-double-places .activities-place-model:last-child{
+  height: 35%;
+}
+
+.activities-places .double-places-reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
