@@ -14,6 +14,10 @@ header {
   margin: 0 auto;
 }
 
+li {
+  list-style-type: none;
+}
+
 #logo {
   height: 45px;
   margin: 0 53px;
@@ -35,7 +39,6 @@ header {
 
 .nav-option {
   display: block;
-  list-style-type: none;
   padding: 2rem;
   margin-top: -24px;
   border-top: 3px solid;
@@ -183,6 +186,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 #hosting {
@@ -221,16 +225,20 @@ main {
 }
 
 .hosting-rooms-model h3 {
-  margin: 0.5rem 1.5rem 0 1.25rem;
+  font-size: medium;
+  margin: 0.5rem 1.5rem 0 0.75rem;
+  padding-bottom: 8px;
   font-weight: bold;
 }
 
 .hosting-rooms-model p {
-  margin: 0 3rem 0 1.25rem;
+  font-size: small;
+  margin: 0 3rem 0 0.75rem;
+  padding-bottom: 8px;
 }
 
 .hosting-stars {
-  margin: 0.1rem 3rem 1.5rem 1.25rem;
+  margin: 0.1rem 3rem 1.5rem 0.75rem;
   font-size: 11px;
 }
 
@@ -310,14 +318,24 @@ color: #0065fc;
   margin: 1.5rem 3rem 1.5rem 1.25rem;
 }
 
-.activities-places{
-  display: flex;
+.activities {
+  margin-left: 38px;
 }
 
-.activities-places .activities-place-model{
-  /* width: 25%; */
+.activities h2 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.activities-places{
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+
+.activities-places .activities-place-model, .activities-double-places {
+  width: 25%;
   border-radius: 1.5rem;
-  box-shadow: 0 0 20px 0 #00000044;
 }
 
 .activities-place-model img{
@@ -349,4 +367,33 @@ color: #0065fc;
 .activities-places .double-places-reverse {
   display: flex;
   flex-direction: column-reverse;
+}
+
+footer {
+  height: 218px;
+  background-color:#f2f2f2;
+  margin-top: 55px;
+  width: 100%;
+}
+
+.lists {
+  display: flex;
+  justify-content:space-between
+}
+
+.activities-place-model h3 {
+  padding-left: 40px;
+}
+
+.assist-list {
+  margin-right: 400px;
+}
+
+.lists li {
+  padding-top: 20px;
+  font-size: larger;
+}
+
+.lists .strong {
+  padding-bottom: 10px;
 }
