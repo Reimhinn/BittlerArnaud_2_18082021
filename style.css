@@ -15,8 +15,13 @@ header {
   margin: 0 auto;
 }
 
-li {
+ul {
   list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
 }
 
 #logo {
@@ -192,25 +197,25 @@ main {
 
 .rooms{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
 #hosting {
   background-color: #F2F2F2;
-  max-width: 64%;
+  max-width: 67%;
   height: 625px;
   border-radius: 2rem;
-  padding: 0 50px;
+  padding: 0 38px;
   box-sizing: border-box;
   margin-right: 40px;
 }
 
 #hosting h2 {
   /* margin-left: 50px; */
-  padding-top: 25px;
+  padding-top: 45px;
   padding-bottom: 10px;
+  margin: 0;
 }
 
 #hosting-rooms {
@@ -229,7 +234,6 @@ main {
   box-shadow: 0 0 20px 0 #00000044;
   padding: 5px;
   box-sizing: border-box;
-  margin-top: 0;
 }
 
 .hosting-rooms-model h3 {
@@ -271,7 +275,6 @@ main {
 }
 
 .hosting-rooms-model:hover {
-  cursor: pointer;
   transform: scale(1.02);
 }
 
@@ -294,12 +297,28 @@ main {
   background-color: #F2F2F2;
   width: 30%;
   border-radius: 2rem;
-  padding: 0 50px;
+  height: 625px;
 }
 
 .popular h2{
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding-top: 45px;
+  padding-bottom: 19px;
+  margin: 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrow-icon{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 47px;
+}
+
+.arrow-i {
+  font-size: 25px;
 }
 
 .popular .hosting-rooms-model {
@@ -308,8 +327,9 @@ main {
   margin-left: 0;
   display: flex;
   padding: 5px;
-  margin-bottom: 34px;
+  margin-bottom: 21px;
   border-radius: 1.6rem;
+  margin-right: 0;
 }
 
 .popular-img-model{
@@ -323,6 +343,7 @@ main {
 .popular-rooms {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .popular-rooms-text {
@@ -365,20 +386,34 @@ main {
   border-bottom-right-radius: 0;
 }
 
-.activities-first-double{
-  /* display: flex; */
-  /* flex-direction: column;
+.activities-places > div {
   width: 25%;
-  height: 100%;
-  align-content: space-around */
 }
 
 .activities-first-double .activities-place-model:first-child{
   height: 55%;
+  margin-bottom: 36px;
 }
 
 .activities-first-double .activities-place-model:last-child{
-  height: 25%;
+  height: calc(45% - 36px);
+}
+
+.activities-second-double .activities-place-model:first-child{
+  height: 45%;
+  margin-bottom: 36px;
+}
+
+.activities-second-double .activities-place-model:last-child{
+  height: calc(55% - 36px);
+}
+
+.activities-second-double .activities-place-background{
+  margin-right: 0;
+}
+
+.activities-places > .activities-place-model:first-child .activities-place-background {
+  margin-left: 0;
 }
 
 .activities-place-background{
@@ -391,7 +426,7 @@ main {
 footer {
   height: 218px;
   background-color:#f2f2f2;
-  margin-top: 55px;
+  margin-top: 80px;
   width: 100%;
 }
 
@@ -406,10 +441,6 @@ footer {
   padding-left: 40px;
 }
 
-.assist-list {
-  margin-right: 400px;
-}
-
 .lists li {
   padding-top: 20px;
   font-size: larger;
@@ -417,4 +448,8 @@ footer {
 
 .lists .strong {
   padding-bottom: 10px;
+}
+
+.lists ul {
+  width: calc(100%/3);
 }
