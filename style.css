@@ -3,7 +3,9 @@
   src: url("fonts/Raleway-Regular.ttf") format("truetype")
  }
 
-body {
+
+
+body, html {
   font-family: "raleway";
   margin: 0;
  }
@@ -13,6 +15,7 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  width: 88%;
 }
 
 ul {
@@ -20,14 +23,13 @@ ul {
   padding: 0;
 }
 
-li a {
+a {
   text-decoration: none;
 }
 
 #logo {
   height: 45px;
   margin: 0;
-  cursor: pointer;
   margin-top: 45px;
   padding-bottom: 20px;
 }
@@ -37,7 +39,6 @@ li a {
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  cursor: pointer
 }
 
 #menu ul {
@@ -54,7 +55,6 @@ li a {
 }
 
 .nav-option:hover {
-  cursor: pointer;
   border-top: 3px solid;
   border-color: #0065FC;
 }
@@ -80,6 +80,7 @@ li a {
 main {
   max-width: 1440px;
   margin: 0 auto;
+  width: 88%;
 }
 
 #filter {
@@ -116,8 +117,8 @@ main {
   border-radius: 0 20px 20px 0;
   padding: 10px;
   border: none;
-  cursor: pointer;
   width: 134px;
+  cursor: pointer;
 }
 
 #search-button-text, #search-text {
@@ -132,7 +133,6 @@ main {
   border: solid 2px;
   border-radius: 30px;
   border-color: #d9d9d9;
-  cursor: pointer;
   font-size: 16px;
   height: 48px;
   vertical-align: top;
@@ -290,7 +290,6 @@ main {
 .show-more{
   padding-left: 5px;
   padding-top: 3px;
-  cursor: pointer;
 }
 
 .popular {
@@ -453,3 +452,10 @@ footer {
 .lists ul {
   width: calc(100%/3);
 }
+
+/* @media screen and (max-width :1280px){
+  #menu {
+    display: flex;
+    flex-direction: column;
+  }
+} */
