@@ -323,7 +323,7 @@ main {
 }
 
 .popular .hosting-rooms-model {
-  width: 343px;
+  width: 82%;
   height: 144px;
   margin-left: 0;
   display: flex;
@@ -372,10 +372,21 @@ main {
   width: 25%;
 }
 
+.activities-second-double{
+ width: 25%;
+}
+
 .activities-first-double .activities-place-model {
   width: 100%;
 }
 
+.activities-second-double .activities-place-model {
+  width: 100%;
+}
+
+a.activities-place-model {
+  width: 25%;
+}
 
 .activities-place-model img{
   width: 100%;
@@ -385,10 +396,6 @@ main {
   object-fit: cover;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-.activities-places > div, a {
-  width: 25%;
 }
 
 .activities-first-double .activities-place-model:first-child{
