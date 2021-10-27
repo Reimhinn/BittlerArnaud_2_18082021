@@ -12,8 +12,8 @@ header {
 }
 
  h2 {
-   font-size: 20px;
-   font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
  }
 
 ul {
@@ -32,6 +32,7 @@ a {
   margin: 0;
   margin-top: 45px;
   padding-bottom: 20px;
+  margin-left : -3px;
 }
 
 #menu {
@@ -48,7 +49,7 @@ a {
 
 .nav-option {
   display: block;
-  padding: 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   margin-top: -16px;
   border-top: 3px solid;
   border-color: white;
@@ -71,10 +72,12 @@ a {
 
 #page-presentation h2{
   margin-bottom: 0;
+  margin-top: 10px;
 }
 
 #page-presentation p{
   margin-top: 7px;
+  font-size: 14px;
 }
 
 main {
@@ -90,13 +93,14 @@ main {
 
 #search-bar {
   display: inline-flex;
-  height: 52px;
+  height: 45px;
+  width: 100%;
 }
 
 .search-bar-icon {
   background-color: #F2F2F2;
-  padding: 17px;
-  border-radius: 20px 0 0 20px;
+  padding: 0.85rem;
+  border-radius: 16px 0 0 16px;
   text-align: center;
   width: 20px;
   font-size: 18px;
@@ -104,7 +108,7 @@ main {
 
 #search-text {
   padding: 10px;
-  width: 236px;
+  width: 16%;
   border-left: none;
   border-right: none;
   border-top: #F2F2F2 1px solid;
@@ -114,16 +118,20 @@ main {
 #search-button {
   background-color:#0065FC;
   color: white;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 16px 16px 0;
   padding: 10px;
   border: none;
-  width: 134px;
+  width: 10%;
   cursor: pointer;
 }
 
 #search-button-text, #search-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+}
+
+.search-icon {
+  display: none;
 }
 
 .filter-option {
@@ -165,33 +173,39 @@ main {
 .filter-category {
   margin: 13px;
   font-weight: bold;
+  font-size: 16px;
   /* margin-top: -20px; */
   /* display: block; */
 }
 
 #filter h2 {
   margin-top: 45px;
-  font-size: 16px;
-  margin-right: 8px;
+  font-size: 17px;
+  margin-right: 20px;
 }
 
 #search-infos {
   display: inline-flex;
   margin-bottom: 27px;
+  margin-top: 15px;
+}
+
+#search-infos {
+  font-size: 14px;
 }
 
 .icon-infos {
   color: #0065FC;
   height: 25px;
   width: 25px;
-  font-size: 14px;
+  font-size: 11px;
   border: solid 1px;
-  margin: 13px 10px 0 0;
+  margin: 10px 10px 0 0;
   border-radius: 100%;
   border-color: #d9d9d9;
   text-align: center;
   /* vertical-align: top; */
-  padding: 4px 2px;
+  padding: 6px 2px;
   box-sizing: border-box;
 }
 
@@ -212,6 +226,7 @@ main {
 }
 
 #hosting h2 {
+  font-size: 21px;
   /* margin-left: 50px; */
   padding-top: 45px;
   padding-bottom: 10px;
@@ -289,7 +304,7 @@ main {
 
 .show-more{
   padding-left: 5px;
-  padding-top: 3px;
+  padding-top: 22px;
 }
 
 .popular {
@@ -300,6 +315,7 @@ main {
 }
 
 .popular h2{
+  font-size: 21px;
   padding-top: 45px;
   padding-bottom: 19px;
   margin: 0;
@@ -313,11 +329,12 @@ main {
 .arrow-icon{
   display: flex;
   justify-content: flex-end;
-  padding-top: 40px;
+  padding-top: 47px;
+  margin-left: 60px;
 }
 
 .arrow-i {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .popular .hosting-rooms-model {
@@ -356,6 +373,7 @@ main {
 }
 
 #activities h2 {
+  font-size: 21px;
   margin: 0;
 }
 
@@ -434,7 +452,7 @@ a.activities-place-model {
 }
 
 footer {
-  height: 218px;
+  height: 190px;
   background-color:#f2f2f2;
   margin-top: 80px;
   width: 100%;
@@ -444,6 +462,7 @@ footer {
   display: flex;
   justify-content:space-between;
   max-width: 1440px;
+  width: 87%;
   margin: 0 auto;
 }
 
@@ -454,8 +473,12 @@ footer {
 }
 
 .lists li {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: larger;
+}
+
+.lists a {
+  font-size: 15px;
 }
 
 .lists .strong {
@@ -492,7 +515,7 @@ footer {
     border-top: none;
     border-bottom: 3px solid;
     border-color: #f2f2f2;
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   .nav-option:hover {
@@ -524,8 +547,37 @@ footer {
     padding: 0 30px 0px 20px;
   }
 
+  #search-bar {
+    margin-top: 17px;
+  }
+
+  #search-button {
+    border-radius: 14px;
+    width: 45px;
+  }
+
+  #search-button-text {
+    display: none;
+  }
+
+  #search-text {
+    width: 79%;
+  }
+
+  .search-icon {
+    display: inline-block;
+  }
+
+  .show-more {
+    padding: 7px 0 20px 5px;
+  }
+
   .popular {
     border-radius: 0px;
+  }
+
+  .arrow-icon {
+    padding-top: 42px;
   }
 
   .header-flex {
@@ -627,6 +679,7 @@ footer {
   .lists {
     flex-direction: column;
     margin: auto;
+    margin-top: -45px;
   }
 
   .lists ul {
@@ -640,6 +693,10 @@ footer {
 }
 
 @media screen and (max-width : 1370px) and (min-width : 769px) {
+
+  .search-icon {
+    display: none;
+  }
 
   .rooms {
     flex-direction: column-reverse;
@@ -689,14 +746,6 @@ footer {
   .popular .hosting-rooms-model:nth-child(3n) {
     margin-right: 40px;
   }
-/*
-  #hosting .hosting-rooms-model:nth-child(3n + 1) {
-    margin-left: 14px;
-  }
-
-  #hosting .hosting-rooms-model:nth-child(3n) {
-    margin-right: 14px;
-  } */
 
   #hosting .hosting-rooms-model {
     margin: 15px;
@@ -711,12 +760,17 @@ footer {
 
 @media screen and (max-width : 1175px) and (min-width : 769px) {
 
-  #menu {
-    justify-content: flex-end;
+  #search-button {
+    border-radius: 14px;
+    width: 45px;
   }
 
-  #menu ul {
-    flex-direction: column;
+  #search-button-text {
+    display: none;
+  }
+
+  .search-icon {
+    display: inline-block;
   }
 
   .popular {
@@ -746,6 +800,14 @@ footer {
 
   .activities-second-double .activities-place-background {
     margin-right: 20px;
+  }
+
+  .activities-second-double {
+    margin-top: 40px;
+  }
+
+  .activities-places .activities-place-model:nth-child(3) {
+    margin-top: 40px;
   }
 
   footer {
@@ -781,6 +843,19 @@ footer {
     margin: 12px;
   }
 
+  #search-button {
+    border-radius: 14px;
+    width: 45px;
+  }
+
+  #search-button-text {
+    display: none;
+  }
+
+  .search-icon {
+    display: inline-block;
+  }
+
   #hosting {
     max-width: 100%;
     height: auto;
@@ -793,6 +868,9 @@ footer {
       box-shadow: 0 0 20px 0 #0000001f;
   }
 
+  .popular .hosting-rooms-model:nth-child(1) {
+    margin-top: 17px;
+  }
 
 
 }
