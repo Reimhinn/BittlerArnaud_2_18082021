@@ -18,7 +18,7 @@ header {
   width: 88%;
 }
 
- h2 {
+h2 {
   font-size: 20px;
   font-weight: bold;
  }
@@ -112,10 +112,6 @@ main {
   width: 100%;
 }
 
-.search-icon {
-  display: none;
-}
-
 .search-bar-icon {
   background-color: #F2F2F2;
   padding: 0.85rem;
@@ -128,6 +124,7 @@ main {
 .search-text {
   padding: 10px;
   width: 16%;
+  min-width: 230px;
   border-left: none;
   border-right: none;
   border-top: #F2F2F2 1px solid;
@@ -149,7 +146,7 @@ main {
   font-weight: bold;
 }
 
-.search-icon {
+#search-icon {
   display: none;
 }
 
@@ -332,6 +329,7 @@ main {
 .show-more{
   padding-left: 5px;
   padding-top: 22px;
+  padding-bottom: 30px;
 }
 
 
@@ -414,6 +412,7 @@ main {
 #activities h2 {
   font-size: 21px;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .activities-places{
@@ -544,7 +543,7 @@ footer {
 
 @media screen and (max-width : 1370px) and (min-width : 769px) {
 
-  .search-icon {
+  #search-icon {
     display: none;
   }
 
@@ -624,7 +623,7 @@ footer {
     display: none;
   }
 
-  .search-icon {
+  #search-icon {
     display: inline-block;
   }
 
@@ -711,7 +710,7 @@ footer {
     display: none;
   }
 
-  .search-icon {
+  #search-icon {
     display: inline-block;
   }
 
@@ -775,7 +774,7 @@ footer {
 
     .sign-in-nav:hover {
     border: none;
-    color: rgb(134, 134, 248);
+    color: rgb(118, 118, 118);
     }
 
     .menu ul {
@@ -809,7 +808,7 @@ footer {
       width: 79%;
     }
 
-    .search-icon {
+    #search-icon {
       display: inline-block;
     }
 
